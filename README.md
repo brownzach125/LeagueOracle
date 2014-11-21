@@ -19,9 +19,9 @@ riotwatcher - Included in Repository but availible from [Pseudonym117](https://g
 ####Setup
 Setup a mysql database.<br>
 Fill in the Creds.json file with the info for you database.<br> 
-Get a riot games dev key/s. Requires League of Legends Account, but one can be created for free.<br>
+Get a riot games dev key/s. Requires League of Legends Account:<br>
 - [League of Legends Account](https://signup.na.leagueoflegends.com/en/signup/index?realm_key=na) 
-- [API Key Availible at](https://developer.riotgames.com/) 
+- [API Key](https://developer.riotgames.com/) 
 
 Fill in the Keys.txt file with your keys and the program can be run. <br>
 Due to Riot API Rate limits you willl likely need to leave crawler running for some time togather enough data before classifiers can predict effictively.
