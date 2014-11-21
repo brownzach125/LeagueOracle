@@ -6,7 +6,7 @@ from pybrain.supervised.trainers import BackpropTrainer
 from pybrain.tools.validation import ModuleValidator
 import simplejson as json
 import pickle
-
+import sys
 
 
 idmap = 0
@@ -51,7 +51,7 @@ class NeuralOracle:
 
         network = buildNetwork(maplen * 2 , maplen * 2 , 1 )
         trainer = BackpropTrainer(network, ds)
-        trainer.trainUntilConvergence()
+        trainer.train()
         NeuralOracle.saveNetwork( network , name )
        
     @staticmethod
@@ -85,14 +85,20 @@ class NeuralOracle:
         self.net = NeuralOracle.loadNetwork(name)
     
     def predict(self, champs):
-        entry = NeuralOracle.createEntry( champs )
+        entry = NeuralOracle.createEntry( champs , NeuralOracle.getIdMap() )
         return self.net.activate(entry)
         
 
 def main():
     
-    NeuralOracle.createAndTrainNetwork("test-network")
-    pass
+    champs = sys.argv[1]
+    champs = champs.split()
+    print champs
+    network = NeuralOracle("test-network")
+    print NeuralOracle.getIdMap()
+    print "The prediction is " + str(network.predict(champs))
+    #NeuralOracle.createAndTrainNetwork("test-network")
+    
 
 
 if __name__ == "__main__":
