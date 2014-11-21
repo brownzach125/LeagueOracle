@@ -12,8 +12,8 @@ predict the outcome of League of Legends games.
 4. Use classifiers to preict winning side.
 
 ####Dependicies
-pybrain - Availible from [PyBrain](https://github.com/pybrain/pybrain) <br>
-python wrapper for mysql - Tutorial for installing at http://zetcode.com/db/mysqlpython/ <br>
+PyBrain Neural Network - Availible from [PyBrain](https://github.com/pybrain/pybrain) <br>
+Python wrapper for MySQL - Tutorial for installing at http://zetcode.com/db/mysqlpython/ <br>
 riotwatcher - Included in Repository but availible from [Pseudonym117](https://github.com/pseudonym117/Riot-Watcher) <br> 
 
 ####Setup
