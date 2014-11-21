@@ -28,7 +28,8 @@ Get a riot games dev key/s. Requires League of Legends Account. You can get thes
 Fill in the Keys.txt file with your API key and the program can be run. <br>
 - For multiple kets delimit with spaces { "keys" : [ "%key1" , "%key2" , "%key3"] }
 - If you only have one key be sure to in clude no commas { "keys" : [ "%key1"] }
--
+
 Due to Riot API Rate limits you willl likely need to leave crawler running for some time togather enough data before classifiers can predict effictively.
   
+
 League Oracle isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
